@@ -1,10 +1,18 @@
 # Wordpress autoloader plugin
 PSR-4 autoloader for wordpress developers
 ## Getting Started
-To use a plugin, copy wp-content to your wordpress directory. That's all. Now you can use autoloader. See the example below:
+To use a plugin:
+1. copy content of repository to your own wp-content/plugins/autoloader directory,
+2. activate plugin in admin panel.
+That's all. Now you can use autoloader. See the example below:
 ```php
 // f.e. hello-dolly.php - main plugin file
 <?php
+
+if (!class_exists('___Autoloader')){
+    return ; //safety first
+}
+
 ___Autoloader::namespaces([
             'PluginNS\\'=>__DIR__.'/src'
         ]);
@@ -14,6 +22,8 @@ use PluginNS/SomeClass;
 
 $instance = new SomeClass();
 ```
+
+Be careful when you are using this plugin as dependency of your own, without checking that autoloader is loaded. It could crash your Wordpress.
 
 ## Testing
 
