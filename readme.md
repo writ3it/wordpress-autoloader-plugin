@@ -1,5 +1,7 @@
 # Wordpress autoloader plugin
-PSR-4 autoloader for wordpress developers
+PSR-4 autoloader for wordpress developers.
+
+Be careful when you are using this plugin as dependency of your own, without checking that autoloader is loaded. It could crash your Wordpress. This is a cause that plugin is not published in official Plugin Directory. **You are using plugin on your own risk.**
 ## Getting Started
 To use the plugin:
 1. copy files from repository to your own wp-content/plugins/autoloader directory,
@@ -22,9 +24,7 @@ ___Autoloader::namespaces([
 use PluginNS/SomeClass;
 
 $instance = new SomeClass();
-```
-
-Be careful when you are using this plugin as dependency of your own, without checking that autoloader is loaded. It could crash your Wordpress. This is a cause that plugin is not published in official Plugin Directory. You are using plugin on your own risk.  
+```  
 
 ## Testing
 
