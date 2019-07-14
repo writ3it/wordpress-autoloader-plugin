@@ -4,6 +4,7 @@ PSR-4 autoloader for wordpress developers
 To use the plugin:
 1. install plugin from Wordpress Plugins Directory,
 2. activate plugin in admin panel.
+
 That's all. Now you can use autoloader. See the example below:
 ```php
 // f.e. hello-dolly.php - main plugin file
