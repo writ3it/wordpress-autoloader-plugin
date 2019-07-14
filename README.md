@@ -1,7 +1,7 @@
 # Wordpress autoloader plugin
 PSR-4 autoloader for wordpress developers
 ## Getting Started
-To use a plugin:
+To use the plugin:
 1. copy content of repository to your own wp-content/plugins/autoloader directory,
 2. activate plugin in admin panel.
 That's all. Now you can use autoloader. See the example below:
