@@ -2,13 +2,17 @@
 
 /**
  * Plugin Name: Autoloader
- * Description: Plugin provides autoloader for another plugins and themes.
+ * Plugin URI:  https://github.com/writ3it/wordpress-autoloader-plugin
+ * Description: Plugin provides PSR-4 autoloader for another plugins and themes.
+ * License:     MIT
+ * License URI: https://github.com/writ3it/wordpress-autoloader-plugin/blob/master/README.md
  * Version: 1.0.0
  * Author: writ3it
  * Text Domain: autoloader
  */
 
 class ___Autoloader{
+
     const PHP_EXTENSION = '.php';
     const NS_DELIMITER = '\\';
     const DR_DELIMITER = '/';
