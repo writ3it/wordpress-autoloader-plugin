@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-require_once MU_PLUGINS.'/!!!autoloader.php';
+require_once PLUGINS . '/autoloader/!!!autoloader.php';
 /**
  * Created by PhpStorm.
  * User: writ3it

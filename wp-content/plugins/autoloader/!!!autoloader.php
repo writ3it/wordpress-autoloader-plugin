@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: Autoloader
+ * Plugin Name: Autoloader MU Module
  * Plugin URI:  https://github.com/writ3it/wordpress-autoloader-plugin
  * Description: Plugin provides PSR-4 autoloader for another plugins and themes.
  * License:     MIT
