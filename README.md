@@ -22,6 +22,22 @@ $ composer install
 $ composer test
 ```
 
+## FAQ: A few words of explanation
+
+1. *Why?* 
+Ofcourse, We could use composer autoloader for each plugin but this practise isn't DRY.
+
+2. *Why mu-plugins?*
+Mu-plugins are loaded earlier than standard plugins.
+
+3. *Why the name contains the exclamation mark!?*
+Because exclamation mark occurs earlier than letters at ASCII table. Wordpress use sort function to determine order of plugin loading and autoloader should be first.
+
+4. *Isn't the exclamation mark a problem?*
+In fact is it, but I think that only for a windows based servers.
+
+
+
 ## Contributing
 
 
