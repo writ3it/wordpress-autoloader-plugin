@@ -87,7 +87,7 @@ class ___Autoloader{
             if ($classLength<$len){
                 continue;
             }
-            if (substr($class,0,$len)===$namespace){
+            if (substr($class,0,$len)===$namespace && $class[$len] == self::NS_DELIMITER){
                 return $namespace;
             }
         }
